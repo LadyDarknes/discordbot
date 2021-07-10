@@ -11,6 +11,11 @@ client.on('ready', () => {
 .catch(console.error);
 });
 
+client.on('guildMemberAdd', member => {
+  const girişçıkış = member.guild.channels.cache.find(channel => channel.name === '🖐gelen-giden');
+  girişçıkış.send(`Aramıza hoşgeldin, ${member}`);
+});
+
 client.on('message', msg => {
 	if (msg.content.toLowerCase() === 'sa') {
 		msg.reply('as');
