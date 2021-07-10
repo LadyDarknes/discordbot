@@ -22,22 +22,6 @@ client.on('message', msg => {
 	}
 });
 
-module.exports = {
-   kod: "sahtemesaj",
-   async run(client, message, args){
-    const user = message.mentions.users.first()
-    if (!user) return message.channel.send("bir kullanıcı etiketle")
-	   if (user.bot) return message.channel.send("bot yerine kullanıcı etiketle")
-	   if (!args[1]) return message.channel.send("bir mesaj belirtiniz
-      const mesaj = args.slice(1).join(" ")
-   const webhook = await message.channel.crateWebhook(user.username, {
-    reason: "Eğlence",
-    avatar: user.displayAvatarURL()
-    })
-   webhook.send(mesaj)
-   }
-}	
-
 client.on('message', msg => {
 	if (msg.content.toLowerCase() === 'selam') {
 		msg.reply('as');
