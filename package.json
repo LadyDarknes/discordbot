@@ -1,0 +1,16 @@
+{
+  "name": "denemebotu",
+  "version": "0.0.1",
+  "description": "",
+  "main": "deneme.js",
+  "scripts": {
+    "test": "node deneme.js"
+  },
+  "author": "thelord",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
