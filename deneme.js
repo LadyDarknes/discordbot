@@ -12,7 +12,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', member => {
-  const girişçıkış = member.guild.channels.cache.find(channel => channel.name === '🖐gelen-giden');
+  const girişçıkış = member.guild.channels.cache.find(channel => channel.name === 'gelen-giden');
   girişçıkış.send(`Aramıza hoşgeldin, ${member}`);
 });
 
