@@ -101,7 +101,7 @@ if (message.content.startsWith('!banla')) {
 client.on('guildMemberAdd', member => {
 try {
 const Sayaç = member.guild;
-Sayaç.setName(`Drkurganci (${member.guild.memberCount}/${hedef}`);
+Sayaç.setName(`LordWorld (${member.guild.memberCount}/${hedef}`);
 }
 catch (e) {
 console.log(e);
@@ -111,7 +111,7 @@ console.log(e);
 client.on('guildMemberRemove', member => {
 try {
 const Sayaç = member.guild;
-Sayaç.setName(`Drkurganci (${member.guild.memberCount}/${hedef}`);
+Sayaç.setName(`LorWorld (${member.guild.memberCount}/${hedef}`);
 }
 catch (e) {
 console.log(e);
