@@ -138,11 +138,6 @@ client.on('message', message => {
   }
 });
 
-client.on('message', msg => {
-	if (msg.content.toLowerCase() === 'selam') {
-		msg.reply('as');
-	}
-});
 
 client.on('message', msg => {
 	if (msg.content.toLowerCase() === 'naber') {
@@ -264,6 +259,18 @@ client.on('message', msg => {
 client.on('message', msg => {
 	if (msg.content.toLowerCase() === 'nasılsın') {
 		msg.reply('iyiyim sen?');
+	}
+});
+
+client.on('message', msg => {
+	if (msg.content.toLowerCase() === '@TheLord') {
+		msg.reply(' ');
+	}
+});
+
+client.on('message', msg => {
+	if (msg.content.toLowerCase() === 'iyi sen') {
+		msg.reply('bende iyiyim');
 	}
 });
 
