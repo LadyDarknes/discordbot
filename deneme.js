@@ -10,7 +10,7 @@ var hedef = hedefimiz.hedef
 
 client.on('ready', () => {
 	console.log(`bot açıldı ${client.user.tag}!`);
-  client.user.setActivity('doruk ve Thelordun kanalarını takip ediniz kanları bulmak için !youtube yazabilirsiniz', { type: 'PLAYING' })
+  client.user.setActivity('youtube kanallarına ulaşmak için !youtube', { type: 'PLAYING' })
 .then(presence => console.log(`Durum ${presence.activities[0].name} oldu.`))
 .catch(console.error);
 });
